@@ -1,0 +1,44 @@
+﻿@model MasterPiece.Models.RegisterViewModel
+
+
+@using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-group" }))
+{
+    <div style="width:100% !important">
+        <div>
+            <img src="~/Images/Register.jpg" style="height:100vh; position:relative;" alt="Slider Image">
+
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="position:absolute; top:65%; left:70%; transform:translate(-50%, -50%)">
+                @*background-color:white; border-radius:20px; padding:30px;*@
+                <div class="container" style="width:70% !important;">
+                    <h2 style="font-weight: bolder; margin-top: 30px; text-align:center">Create a new account</h2><br /><br />
+                    @Html.AntiForgeryToken()
+                    <div class="form-group" style="width:100%">
+                        @Html.LabelFor(m => m.Email, new { @class = "font-weight-bold form label" })
+                        @Html.TextBoxFor(m => m.Email, new { @class = "form-control", placeholder = "Enter Your email please" })
+                    </div>
+
+                    <div class="form-group">
+                        <label class="font-weight-bold">Phone Number:</label>
+                        <input type="text" name="Email" class="form-control" placeholder="Enter Your Phone Number Please" />
+                    </div>
+
+                    <div class="form-group" style="width:100%">
+                        @Html.LabelFor(m => m.Password, new { @class = "font-weight-bold" })
+                        @Html.PasswordFor(m => m.Password, new { @class = "form-control" , placeholder = "Enter Your Password please" })
+                    </div>
+                    <div class="form-group" style="width:100%">
+                        @Html.LabelFor(m => m.ConfirmPassword, new { @class = "font-weight-bold" })
+                        @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" , placeholder = "Confirm Your Password please" })
+                    </div>
+                    <br /><br />
+                    <div class="form-group" style="width:100%">
+                        <button class="btn btn-dark w-100" type="submit" style=" border-radius:8px;">REGISTER</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+        </div>
+    </div>
+}
+

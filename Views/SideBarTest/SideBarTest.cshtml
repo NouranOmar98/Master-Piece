@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewBag.Title = "SideBarTest";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>SideBarTest</h2>
+<style>
+    .SideBar {
+        width: 200px;
+        bottom: 10px;
+        background-color: greenyellow;
+        z-index: 10;
+        height:800px;
+    }
+    a{
+        list-style:none
+    }
+</style>
+<div class="row">
+    <div class="col-3">
+        <div class="SideBar">
+            <ul>
+                <li>
+                    <a href="#">Cat</a>
+
+                </li>
+                <li>
+                    <a href="#">Dogs</a>
+
+                </li>
+                <li>
+                    <a href="#">Qais</a>
+
+                </li>
+            </ul>
+
+           
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Appoitment
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class="col-9">
+        dcscdsvdssd
+    </div>
+</div>
+<br /><br />

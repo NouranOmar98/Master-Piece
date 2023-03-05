@@ -1,0 +1,206 @@
+﻿
+@{
+    ViewBag.Title = "HomePage";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .parallax {
+        background: url(../../Images/paralix3.jpg) no-repeat fixed 100%;
+        background-size: cover;
+        height: 100%;
+    }
+
+    .parallax-inner {
+        padding: 20% 0%;
+    }
+
+    #parrah1 {
+        font-family: "Audiowide", sans-serif;
+        font-size: 50px;
+        color: azure;
+        text-align: center;
+    }
+</style>
+<div style="width:100% !important">
+    <div style="position: relative;">
+        <img src="~/Images/HomeSlider1.png" style="width:100%;" alt="Slider Image">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="position: absolute; top: 55%; left: 70%; transform: translate(-50%, -50%); width: 300px">
+            <div class="sub-title" style="color:#888888"> Get Up to 30% Off On All Pet's Food</div>
+            <div class="main-title" style="color:#000000; font-size:36px; margin-top:20px">Care Pets &</div>
+            <div class="desc" style="color:#000000; font-size:36px; margin-top:20px">TREAT THEM BEST</div>
+            <div class="btn btn-primary" style="margin-top:20px; border-radius:20px">SHOP NOW</div>
+            <div class="btn btn-primary" style="margin-top:20px; border-radius:20px">BE A PARTNER</div>
+
+        </div>
+    </div>
+    <div>
+    </div>
+</div>
+<br />
+<br />
+@*style="background-color: #0d6efd; width: 30%; border-radius: 20px;*@
+<div style="display: flex; align-items: center; justify-content: center;">
+    <div>
+        <h1 class="text-primary" style="text-align:center;">OUR CATEGORYIES</h1>
+        <marquee direction="left">
+            <h6>
+                <p class="text-primary"> 30% DISSCOUNT NOW!</p>
+            </h6>
+        </marquee>
+    </div>
+</div>
+<!-- Carousel wrapper -->
+<div id="carouselMultiItemExample"
+     class="carousel slide carousel-dark text-center"
+     data-mdb-ride="carousel">
+    <div class="carousel-inner py-4">
+        <!-- Single item -->
+        <div class="carousel-item active">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div style="height:350px !important" class="card-img">
+                                <img src="~/Images/dog.jpg" />
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">DOG'S SUPPLIES</h5><br />
+                                <p class="card-text">
+                                    Some quick example text to build on the card title and make up the bulk
+                                    of the card's content.
+                                </p>
+                                <p class="text-primary"> 30% DISSCOUNT NOW!</p>
+                                <a  class="btn btn-warning w-50" type="submit" style=" border-radius:20px;" href="../Categories/Categories">Show More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div style="height:350px !important" class="card-img">
+                                <img src="~/Images/RabbitF.jpg" />
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">RABBIT SUPPLIES</h5><br />
+                                <p class="card-text">
+                                    Some quick example text to build on the card title and make up the bulk
+                                    of the card's content.
+                                </p>
+                                <p class="text-primary"> 30% DISSCOUNT NOW!</p>
+                                <button class="btn btn-warning w-50" type="submit" style=" border-radius:20px;">Show More</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div style="height:350px !important" class="card-img">
+                                <img src="~/Images/cat2.jpg" />
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">CAT SUPPLIES</h5><br />
+                                <p class="card-text">
+                                    Some quick example text to build on the card title and make up the bulk
+                                    of the card's content.
+                                </p>
+                                <p class="text-primary"> 30% DISSCOUNT NOW!</p>
+                                <button class="btn btn-warning w-50" type="submit" style=" border-radius:20px;">Show More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><br />
+<section class="parallax">
+    <div class="parallax-inner">
+        @*<p id="parrah1"> Welcome to my<br> Portfolio</p>*@
+    </div>
+</section>
+<br />
+<br />
+
+<!-- PhotoGirl -->
+
+<div style="background-color: #f7f7f7; height:40%;">
+    <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <div>
+                <img style="height:50%" src="~/Images/HomeSection2.png" alt="Aboutus Image">
+            </div>
+        </div>
+        <div class="text-wrapper col-xl-6 col-md-12 col-sm-12 col-xs-12">
+            <div style="margin-top:120px;">
+                <div class="title"><h1>A Better Step For</h1> <h1><span style="color: #0d6efd">Pet’s</span> Care!</h1></div><br />
+                <div class="description"><p style="color:gray">There are many variations passages Lorem Ipsum variatio passages Lorem available, but the majority suffered alteration but the many variations some form.</p></div><br /><br />
+                <div class="btn btn-warning" style="margin-top:20px; border-radius:20px">READ MORE</div>
+            </div>
+        </div>
+    </div>
+</div>
+<br /><br />
+<!-- Services -->
+<div class="container">
+    <div class="position-absolute z-index--1 end-0 d-none d-lg-block" style="border:none !important;"></div>
+    <div class="mb-7 text-center">
+        <h5 class="text-secondary">SERVICES </h5>
+        <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">We Offer Best Services</h3><br />
+    </div>
+    <div class="row">
+        <div class="col-lg-3 col-sm-6 mb-6">
+            <div class="card service-card text-center align-items-center">
+                <div class="card-body p-xxl-5 p-4" style="background-color: #f7f7f7">
+                    <i class="fa-sharp fa-solid fa-truck-fast" style="font-size:50px;"></i>
+                    <h4 class="mb-3">DELIEVERY</h4><br />
+                    <p class="mb-0 fw-medium">Built Wicket longer admire do barton vanity itself do in it.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 mb-6">
+            <div class="card service-card shadow-hover rounded-3 text-center align-items-center">
+                <div class="card-body p-xxl-5 p-4" style="background-color: #f7f7f7">
+                    <i class="fa-solid fa-cat" style="font-size:50px;"></i>
+                    <h4 class="mb-3">GROAMING</h4>
+                    <p class="mb-0 fw-medium">Engrossed listening. Park gate sell they west hard for the.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 mb-6">
+            <div class="card service-card shadow-hover rounded-3 text-center align-items-center">
+                <div class="card-body p-xxl-5 p-4" style="background-color: #f7f7f7">
+                    <i class="fa-solid fa-shower" style="font-size:50px;"></i> 
+                    <h4 class="mb-3">BATHING</h4>
+                    <p class="mb-0 fw-medium">Barton vanity itself do in it. Preferd to men it engrossed listening.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 mb-6">
+            <div class="card service-card shadow-hover rounded-3 text-center align-items-center">
+                <div class="card-body p-xxl-5 p-4" style="background-color: #f7f7f7">
+                    <i class="fa-solid fa-tents" style="font-size:50px;"></i>
+                    <h4 class="mb-3">SHELTER</h4>
+                    <p class="mb-0 fw-medium">We deliver outsourced aviation services for military customers</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br /><br />
+<div style="width:100% !important">
+    <div style="position: relative">
+        <img src="~/Images/Home2.png" style="width:100%;" alt="Slider Image">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="position: absolute; top: 45%; left: 40%; transform: translate(-50%, -50%) ; width: 300px">
+            <div class="sub-title" style="color:#888888"> Get Up to 30% Off On All Pet's Food</div>
+            <div class="main-title" style="color:#000000; font-size:36px; margin-top:20px">Care Pets &</div>
+            <div class="desc" style="color:#000000; font-size:36px; margin-top:20px">TREAT THEM BEST</div><br />
+            <div class="btn btn-warning" style="margin-top:20px; border-radius:20px">SHOP NOW</div>
+            <div class="btn btn-primary" style="margin-top:20px; border-radius:20px">BE A PARTNER</div>
+
+        </div>
+    </div>
+</div>
+@*<div style="background-image:url('../../Images/dragdrop.png') ; background-size:contain; height:500px; background-repeat:no-repeat;" >
+</div>*@
+<br />
+<br />

@@ -1,0 +1,286 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Purple Admin</title>
+    <!-- plugins:css -->
+    <script src="https://kit.fontawesome.com/cd46a65f5c.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="~/assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="~/assets/vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+    <a href="~/assets/css/style.css.map"></a>
+    <link href="~/assets/css/style.css" rel="stylesheet" />
+    <link href="~/assets/vendors/css/vendor.bundle.base.css" rel="stylesheet" />
+    <style>
+        .content-wrapper {
+            background-color: #f8f9fa !important;
+        }
+
+
+        #ebedf2
+        .navbar .navbar-brand-wrapper .navbar-brand img {
+            height: 50px;
+        }
+
+        i {
+            color: gray !important;
+        }
+
+        spa {
+            color: gray !important;
+        }
+
+        span:hover {
+            color: darkorange !important;
+        }
+
+        i:hover {
+            color: darkorange !important;
+        }
+
+        .active:hover {
+            color: darkorange !important;
+            color: darkorange !important;
+        }
+
+        .pt-5 {
+            padding-top: 0px !important;
+        }
+
+        .mt-3, .template-demo > .btn, .template-demo > .btn-toolbar {
+            margin-top: 0px !important;
+        }
+
+        .sidebar .nav .nav-item.active > .nav-link .menu-title {
+            color: black !important;
+        }
+
+        .sidebar .nav .nav-item .nav-link .menu-title {
+            color: black !important;
+            font-family: "ubuntu-medium", sans-serif;
+        }
+    </style>
+
+</head>
+
+<body style="background-color:#f8f9fa; padding:0px !important;">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+    <style>
+        .navbar .navbar-brand-wrapper .navbar-brand img {
+            height: 50px;
+        }
+
+        i {
+            color: gray !important;
+        }
+
+        spa {
+            color: gray !important;
+        }
+
+        span:hover {
+            color: darkorange !important;
+        }
+
+        i:hover {
+            color: darkorange !important;
+        }
+
+        .active:hover {
+            color: darkorange !important;
+            color: darkorange !important;
+        }
+
+        .fa {
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+        }
+    </style>
+    <form id="form1" runat="server">
+        <div>
+            <div class="">
+                <div class="row p-0 m-0 proBanner" id="proBanner">
+                    <div class="col-md-12 p-0 m-0">
+                        <div class="ps-lg-1">
+
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- partial:partials/_navbar.html -->
+            <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row pt-0">
+                <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+                    <a class="navbar-brand brand-logo" href="index.html"><img src="~/Images/LogoFinal.png" alt="logo" style="width:200px;" /></a>
+                </div>
+                <div class="navbar-menu-wrapper d-flex align-items-stretch">
+                    <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+                        <span class="mdi mdi-menu"></span>
+                    </button>
+                    <div class="search-field d-none d-md-block">
+                        <form class="d-flex align-items-center h-100" action="#">
+                            <div class="input-group">
+                                <div class="input-group-prepend bg-transparent">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <ul class="navbar-nav navbar-nav-right">
+
+                        <li class="nav-item nav-logout d-none d-lg-block">
+
+                        </li>
+
+                    </ul>
+                    <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+                        <span class="mdi mdi-menu"></span>
+                    </button>
+                </div>
+            </nav>
+            <!-- partial -->
+            <div class="container-fluid page-body-wrapper">
+                <!-- partial:partials/_sidebar.html -->
+                <nav class="sidebar sidebar-offcanvas" id="sidebar">
+                    <ul class="nav">
+                        <li class="nav-item nav-profile">
+                            <a href="#" class="nav-link">
+                                <div class="nav-profile-image">
+                                    <img src="~/Images/AdminPhoto.jpeg" alt="profile" style="height:60px; width:50px;">
+                                    <span class="login-status online"></span>
+                                    <!--change to offline or busy as needed-->
+                                </div>
+                                <div class="nav-profile-text d-flex flex-column">
+                                    <span class="font-weight-bold mb-2" style="margin-top:20px">Nouran Omar</span>
+                                    <span class="text-secondary text-small">Admin</span>
+                                </div>
+                                <i class="mdi mdi-bookmark-check text-success nav-profile-badge" style="margin-top:12px" ;></i>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="Statistics.aspx">
+                                <span class="menu-title" style="color:black !important; ">Statstics</span>
+                                <i class="mdi mdi-chart-bar menu-icon" style="font-family: ubuntu-medium, sans-serif; color:black !important;"></i>
+                            </a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="Reservations.aspx">
+                                <span class="menu-title">Clinics</span>
+                                <i class="mdi mdi-hospital-marker menu-icon" style="font-family: ubuntu-medium, sans-serif; color:black !important;"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="AdminTable.aspx">
+                                <span class="menu-title">Animals</span>
+                                <i class="mdi mdi-cat menu-icon" style="font-family: ubuntu-medium, sans-serif; color:black !important;"></i>
+
+                            </a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="buffet.aspx">
+                                <span class="menu-title">Categories</span>
+                                <i class="mdi mdi-format-list-bulleted menu-icon" style="font-family: ubuntu-medium, sans-serif; color:black !important;"></i>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="Admin_category.aspx">
+                                <span class="menu-title">Products</span>
+                                <i class="mdi mdi-paw-off menu-icon" style="font-family: ubuntu-medium, sans-serif; color:black !important;"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Products.aspx">
+                                <span class="menu-title">Clinics Appoitments</span>
+                                <i class="mdi mdi-calendar-clock menu-icon" style="font-family: ubuntu-medium, sans-serif; color:black !important;"></i>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="Admin_Feedback.aspx">
+                                <span class="menu-title">Feedback</span>
+                                <i class="mdi mdi-forum menu-icon" style="font-family: ubuntu-medium, sans-serif; color:black !important;"></i>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="AdminUsers.aspx">
+                                <span class="menu-title">Users</span>
+                                <i class="mdi mdi-contacts menu-icon" style="font-family: ubuntu-medium, sans-serif; color:black !important;"></i>
+                            </a>
+                        </li>
+
+                        <li class="nav-item sidebar-actions">
+                            <span class="nav-link">
+
+                                <a class="btn btn-block btn-lg mt-4" style="background-color:black !important; color:white" href="AddProduct.aspx">+ Add Product</a>
+
+                            </span>
+                        </li>
+
+                    </ul>
+                </nav>
+                <div class=" body-content" style="box-sizing:border-box;">
+                    @RenderBody()
+                </div>
+                <!-- partial -->
+            </div>
+
+            <!-- main-panel ends -->
+        </div>
+        <!-- page-body-wrapper ends -->
+        </div>
+        <div>
+        </div>
+        <!-- container-scroller -->
+        <!-- container-scroller -->
+        <!-- plugins:js -->
+        <script src="~/assets/vendors/js/vendor.bundle.base.js"></script>
+        <!-- endinject -->
+        <!-- Plugin js for this page -->
+        <script src="~/assets/vendors/chart.js/Chart.min.js"></script>
+        <script src="~/assets/js/jquery.cookie.js" type="text/javascript"></script>
+        <!-- End plugin js for this page -->
+        <!-- inject:js -->
+        <script src="~/assets/js/off-canvas.js"></script>
+        <script src="~/assets/js/hoverable-collapse.js"></script>
+        <script src="~/assets/js/misc.js"></script>
+        <!-- endinject -->
+        <!-- Custom js for this page -->
+        <script src="~/assets/js/dashboard.js"></script>
+        <script src="~/assets/js/todolist.js"></script>
+        <!-- End custom js for this page -->
+    </form>
+</body>
+</html>

@@ -1,0 +1,181 @@
+﻿
+@{
+    ViewBag.Title = "SingleProduct";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2 style="text-align:center; font-weight:bolder; margin-top:30px; text-decoration:underline"> Product Details</h2>
+<br />
+<br />
+<br />
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <div style="height:80%">
+                <img src="~/Images/Single Product.png" alt="Aboutus Image">
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <div>
+                <h2>Whole Earth Cat Food</h2> <br /><br />
+                <p style="color:gray">
+                    No review yet,Write Review
+                </p>
+                <p style="font-weight:bold"> Regular price</p>
+                <h3 style="text-decoration:line-through; color:gray">$52.00</h3>
+                <h2 style="color: #0d6efd">$32.00</h2>
+                <p>Category : Cats.</p>
+                <p>Product Type : Food</p>
+                <div id="counter">
+                    <div class="number">0</div>
+                    <div class="controls">
+                        <button id="increment">+</button>
+                        <button id="decrement">-</button>
+                    </div>
+                </div><br />
+                <button class="btn btn-warning w-25" type="submit" style="border-radius:20px;">Add To Cart</button>
+                <a class="btn btn-primary w-25" type="submit" style="border-radius:20px;" href="../CheckOut/CheckOut">Buy Now</a>
+            </div>
+        </div>
+    </div>
+    <form class="row g-3 needs-validation special" novalidate>
+        <div class="mb-3">
+            <h4 for="exampleFormControlTextarea1" class="form-label" style="text-align:center; font-weight:bolder;">ADD YOUR FEEDBACH HERE :))</h4>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" value="" required></textarea>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+        <div class="col-12" style="text-align: center;">
+            <button class="btn btn-warning w-25" type="submit" style="border-radius:20px;">Submit</button>
+        </div>
+    </form>
+    <br />
+    <br />
+    <h3 style="text-align:center; font-weight:bolder; margin-top:30px; "> RELATED PRODUCTS</h3><br /><br />
+    <div class=" row justify-content-center ">
+        <div class="col-lg-3 col-sm-12 col-md-6 ">
+            <div class="card" style="width:20rem; text-align:center">
+                <img src="~/Images/RelatedProduct3.jpg" class="card-img-top" />
+                <div class="card-body">
+                    <h2 class="card-title">
+                        Whole Earth Cat
+                    </h2>
+                    <p class="card-text">
+                    <p style="text-decoration:line-through; color:gray">$52.00</p>
+                    <h4>$32.00</h4>
+                    </p>
+                    <div class="btn btn-primary" style="border-radius:20px;"> Add To Cart</div>
+                    <div class="btn btn-warning" style="border-radius:20px;"> Buy Now</div>
+                </div>
+            </div>
+        </div><br /><br />
+        <div class="col-lg-3  col-sm-12 col-md-6 ">
+            <div class="card" style="width: 20rem; text-align:center">
+                <img src="~/Images/RelatedProduct2.jpg" class="card-img-top" />
+                <div class="card-body">
+                    <h2 class="card-title">
+                        Whole Earth Dog
+                    </h2>
+                    <p class="card-text"> <p style="text-decoration:line-through; color:gray">$62.00</p>
+                    <h4>$42.00</h4></p>
+                    <div class="btn btn-primary" style="border-radius:20px;"> Add To Cart</div>
+                    <div class="btn btn-warning" style="border-radius:20px;"> Buy Now</div>
+
+                </div>
+            </div>
+        </div><br /><br />
+        <div class="col-lg-3  col-sm-12 col-md-6 ">
+            <div class="card" style="width: 20rem; text-align: center">
+                <img src="~/Images/RelatedProduct1.jpg" class="card-img-top" />
+                <div class="card-body">
+                    <h2 class="card-title">
+                        Whole Earth Rabbit
+                    </h2>
+                    <p class="card-text"> <p style="text-decoration:line-through; color:gray">$42.00</p>
+                    <h4>$12.00</h4></p>
+                    <div class="btn btn-primary" style="border-radius:20px;"> Add To Cart</div>
+                    <div class="btn btn-warning" style="border-radius:20px;"> Buy Now</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3  col-sm-12 col-md-6 ">
+            <div class="card" style="width: 20rem; text-align: center">
+                <img src="~/Images/Related Product4.jpg" class="card-img-top" />
+                <div class="card-body">
+                    <h2 class="card-title">
+                        Whole Earth Fish
+                    </h2>
+                    <p class="card-text">  <p style="text-decoration:line-through; color:gray">$32.00</p>
+                    <h4>$22.00</h4> </p>
+                    <div class="btn btn-primary" style="border-radius:20px;"> Add To Cart</div>
+                    <div class="btn btn-warning" style="border-radius:20px;"> Buy Now</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br /><br /><br />
+<style>
+    #counter {
+        display: flex;
+    }
+
+    .number {
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+        margin: 0 10px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 18px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        background-color: lightgray;
+    }
+
+        button:hover {
+            background-color: gray;
+        }
+</style>
+<script>
+    let count = 0;
+    const incrementButton = document.querySelector("#increment");
+    const decrementButton = document.querySelector("#decrement");
+    const counter = document.querySelector(".number");
+
+    incrementButton.addEventListener("click", () => {
+        count++;
+        counter.innerHTML = count;
+    });
+
+    decrementButton.addEventListener("click", () => {
+        count--;
+        counter.innerHTML = count;
+    });
+
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (() => {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+            }, false)
+        })
+    })()
+</script>
+
+
+
